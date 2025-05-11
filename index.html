@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swarnojjwal Guha | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .bg-shapes .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+      z-index: 0;
+      animation: float 10s infinite ease-in-out;
+    }
+
+    .shape-1 {
+      width: 200px;
+      height: 200px;
+      background: #00f7ff;
+      top: 10%;
+      left: 5%;
+    }
+
+    .shape-2 {
+      width: 300px;
+      height: 300px;
+      background: #ff00cc;
+      bottom: 10%;
+      right: 5%;
+      animation-delay: 3s;
+    }
+
+    .shape-3 {
+      width: 150px;
+      height: 150px;
+      background: #8e44ad;
+      top: 50%;
+      right: 20%;
+      animation-delay: 5s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .profile-border {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00f7ff, #ff00cc);
+      z-index: -1;
+      animation: spin 8s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #2c5364;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      color: #00f7ff;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-links {
+      margin: 1rem 0;
+    }
+
+    .social-link {
+      color: #fff;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-link:hover {
+      color: #00f7ff;
+      transform: scale(1.2);
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .contact-item i {
+      color: #00f7ff;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="profile">
+        <div class="profile-border"></div>
+        <img src="./assets/Images/Screenshot 2025-05-09 011833.png" alt="Swarnojjwal Guha" class="profile-pic">
+      </div>
+      <h1>Swarnojjwal Guha</h1>
+      <p class="tagline">Computer Science Student at South Asian University</p>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/swarnojjwal-guha-12b902352" class="social-link" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Swarnojjwal" class="social-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/_itswarno__/" class="social-link" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/91XXXXXXXXXX" class="social-link" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>swarnojjwalguha@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 82815 28055</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Delhi, India</span>
+        </div>
+        <div class="about-me-section">
+  <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+  <p>
+    Hi! I'm <span class="highlight">Swarnojjwal Guha</span> – a passionate coder, curious learner, and creative thinker currently studying at 
+    <span class="highlight">South Asian University, Delhi</span>. I believe in using technology to create elegant, user-centric solutions.
+  </p>
+  <p>
+    Whether it's designing beautiful web interfaces, building command-line tools in Python, or diving deep into logic circuits – I bring enthusiasm and creativity to everything I do. I'm also an avid reader, footballer, and illustrator who finds joy in both pixels and paragraphs.
+  </p>
+</div>
+
+<!-- CSS -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    color: #fff;
+  }
+
+  .about-me-section {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: 60px auto;
+    max-width: 800px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    animation: fadeInUp 1.2s ease-out;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .about-me-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.15);
+  }
+
+  .about-me-section h2 {
+    font-size: 32px;
+    color: #ff66c4;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    animation: pulseColor 3s infinite alternate;
+  }
+
+  .about-me-section i {
+    color: #a18cd1;
+    font-size: 1.5rem;
+    margin-right: 12px;
+  }
+
+  .about-me-section p {
+    font-size: 18px;
+    color: #f1f1f1;
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+
+  .about-me-section .highlight {
+    color: #00f7ff;
+    font-weight: 600;
+    background: linear-gradient(to right, #00f7ff, #ff66c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseColor {
+    from {
+      color: #ff66c4;
+    }
+    to {
+      color: #00f7ff;
+    }
+  }
+</style>
+<!-- Skills Section -->
+<div class="skills-section">
+  <h2><i class="fas fa-cogs"></i> Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+    <div class="skill-card"><i class="fas fa-code"></i><span>C Programming</span></div>
+    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
+    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+    <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+    <div class="skill-card"><i class="fas fa-paint-brush"></i><span>Graphic Designing</span></div>
+    <div class="skill-card"><i class="fas fa-laptop-code"></i><span>UI/UX Design</span></div>
+    <div class="skill-card"><i class="fas fa-pencil-alt"></i><span>Content Writing</span></div>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .skills-section {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    padding: 60px 30px;
+    border-radius: 25px;
+    margin: 60px auto;
+    max-width: 900px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    animation: fadeIn 1s ease-out;
+  }
+
+  .skills-section h2 {
+    font-size: 34px;
+    color: #00f7ff;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: glowText 2s infinite alternate;
+  }
+
+  .skills-section h2 i {
+    margin-right: 10px;
+    color: #ff66c4;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+    width: 120px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: floatIn 0.8s ease forwards;
+    opacity: 0;
+  }
+
+  .skill-card:nth-child(1) { animation-delay: 0.1s; }
+  .skill-card:nth-child(2) { animation-delay: 0.2s; }
+  .skill-card:nth-child(3) { animation-delay: 0.3s; }
+  .skill-card:nth-child(4) { animation-delay: 0.4s; }
+  .skill-card:nth-child(5) { animation-delay: 0.5s; }
+  .skill-card:nth-child(6) { animation-delay: 0.6s; }
+  .skill-card:nth-child(7) { animation-delay: 0.7s; }
+  .skill-card:nth-child(8) { animation-delay: 0.8s; }
+
+  .skill-card:hover {
+    transform: translateY(-10px) scale(1.07);
+    box-shadow: 0 15px 35px rgba(0, 255, 255, 0.2);
+  }
+
+  .skill-card i {
+    font-size: 32px;
+    color: #00f7ff;
+  }
+
+  .skill-card span {
+    display: block;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes floatIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes glowText {
+    from { text-shadow: 0 0 10px #00f7ff; }
+    to { text-shadow: 0 0 20px #ff66c4; }
+  }
+</style>
+<!-- Experience Section -->
+<div class="experience-section">
+  <h2><i class="fas fa-briefcase"></i> Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Web Development Intern – Self Projects</h3>
+      <span class="duration">Jan 2025 – Present</span>
+      <p>Created interactive, responsive websites using HTML, CSS, JavaScript, and React. Focused on user-friendly design, portfolio sites, and academic tools.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>C Programming – Academic Projects</h3>
+      <span class="duration">Aug 2024 – Dec 2024</span>
+      <p>Built CLI-based systems for directory management and data handling. Gained hands-on experience with file structures and algorithm design.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Tech Events Volunteer – SAU</h3>
+      <span class="duration">Nov 2024</span>
+      <p>Helped organize tech events and coding competitions at SAU, handling logistics and participant engagement.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Logo Designing – Freelance Projects</h3>
+      <span class="duration">Jan 2024 – Present</span>
+      <p>Designed logos for startups and small businesses. Specialized in creating custom, visually compelling brand identities.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .experience-section {
+    background: linear-gradient(135deg, #e6f2ff, #f9f9ff);
+    padding: 50px 30px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+  }
+
+  .experience-section h2 {
+    font-size: 32px;
+    color: #6a5acd;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    animation: glowText 2s infinite alternate;
+  }
+
+  .experience-section h2 i {
+    margin-right: 10px;
+    color: #9b4dca;
+  }
+
+  .timeline {
+    position: relative;
+  }
+
+  .timeline-item {
+    background: white;
+    border-left: 5px solid #9b4dca;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 0.6s forwards;
+  }
+
+  .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+  .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+  .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+  .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+  .timeline-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(155, 77, 202, 0.15);
+  }
+
+  .timeline-item h3 {
+    font-size: 20px;
+    color: #6a5acd;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .timeline-item .duration {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .timeline-item p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes glowText {
+    from { text-shadow: 0 0 8px #9b4dca; }
+    to { text-shadow: 0 0 15px #6a5acd; }
+  }
+</style>
+<!-- Education Section -->
+<div class="education-section">
+  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+
+  <div class="education-item">
+    <h3>South Asian University (SAU), New Delhi</h3>
+    <span class="duration">2024 – Present</span>
+    <p>B.Tech in Computer Science – First Semester Completed<br>
+      Focused on programming, web development, and graphic design.
+    </p>
+  </div>
+
+  <div class="education-item">
+    <h3>Saraswati Vidyaniketan, Kochi</h3>
+    <span class="duration">2021 – 2023</span>
+    <p>Senior Secondary (Class 12), CBSE Board – <strong>80.8%</strong><br>
+      Stream: PCM with Computer Science
+    </p>
+  </div>
+
+  <div class="education-item">
+    <h3>Kendriya Vidyalaya No. 1, Naval Base Kochi</h3>
+    <span class="duration">Till 2021</span>
+    <p>Secondary Education (Class 10), CBSE Board – <strong>92%</strong><br>
+      Subjects: English, Hindi, Mathematics, Science, Social Studies
+    </p>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .education-section {
+    background: linear-gradient(135deg, #f8f9fa, #eef8f1);
+    padding: 50px 30px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease;
+  }
+
+  .education-section h2 {
+    font-size: 32px;
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: pulseGlow 2s infinite alternate;
+  }
+
+  .education-section h2 i {
+    margin-right: 10px;
+    color: #4ca25e;
+  }
+
+  .education-item {
+    background: #fff;
+    border-left: 5px solid #28a745;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 0.6s forwards;
+  }
+
+  .education-item:nth-child(2) { animation-delay: 0.2s; }
+  .education-item:nth-child(3) { animation-delay: 0.4s; }
+
+  .education-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(40, 167, 69, 0.15);
+  }
+
+  .education-item h3 {
+    font-size: 20px;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .education-item .duration {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .education-item p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseGlow {
+    from { text-shadow: 0 0 8px #28a745; }
+    to { text-shadow: 0 0 14px #4ca25e; }
+  }
+</style>
+<!-- Interests Section -->
+<div class="card interests-card">
+  <h2><i class="fas fa-heart"></i> Interests</h2>
+  <ul class="interests-list">
+    <li><i class="fas fa-book-reader"></i> Reading</li>
+    <li><i class="fas fa-pencil-alt"></i> Illustrating</li>
+    <li><i class="fas fa-paint-brush"></i> Graphic Designing</li>
+    <li><i class="fas fa-futbol"></i> Football</li>
+    <li><i class="fas fa-gamepad"></i> Gaming</li>
+    <li><i class="fas fa-code"></i> Coding</li>
+  </ul>
+</div>
+
+<!-- CSS -->
+<style>
+  .interests-card {
+    background-color: #fffdf5;
+    border-left: 5px solid #f200ff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 40px 30px;
+    border-radius: 16px;
+    margin: 50px auto;
+    max-width: 800px;
+    animation: fadeInUp 0.8s ease;
+  }
+
+  .interests-card h2 {
+    color: #3c00ff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: pulseHeart 2s infinite alternate;
+  }
+
+  .interests-card h2 i {
+    margin-right: 10px;
+    color: #226fff;
+  }
+
+  .interests-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    font-size: 1.1em;
+  }
+
+  .interests-list li {
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: zoomIn 0.6s ease forwards;
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  .interests-list li:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(255, 180, 0, 0.2);
+  }
+
+  .interests-list li i {
+    font-size: 20px;
+  }
+
+  .interests-list li:nth-child(1) i { color: #3f51b5; }
+  .interests-list li:nth-child(2) i { color: #e91e63; }
+  .interests-list li:nth-child(3) i { color: #9c27b0; }
+  .interests-list li:nth-child(4) i { color: #4caf50; }
+  .interests-list li:nth-child(5) i { color: #f44336; }
+  .interests-list li:nth-child(6) i { color: #2196f3; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes zoomIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes pulseHeart {
+    from {
+      text-shadow: 0 0 5px #00ffb7;
+    }
+    to {
+      text-shadow: 0 0 12px #0040ff;
+    }
+  }
+</style>
+<!-- Back to Top Button -->
+<div class="back-to-top" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- CSS -->
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6a5acd;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .back-to-top:hover {
+    background-color: #7b68ee;
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(106, 90, 205, 0.4);
+  }
+
+  .back-to-top i {
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+
+<!-- JS -->
+<script>
+  const backToTopButton = document.querySelector('.back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add('show');
+    } else {
+      backToTopButton.classList.remove('show');
+    }
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+<!-- Sticky, Colorful Footer -->
+<footer class="sticky-footer">
+  <div class="footer-container">
+    <p>© 2025 <span class="name">Swarnojjwal Guha</span>. No copyrights –  All rights reserved.  ✨</p>
+    <p>Crafted with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
+  </div>
+</footer>
+
+<!-- CSS -->
+<style>
+  /* Sticky Footer Base Setup */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .sticky-footer {
+    width: 100%;
+    margin-top: auto;
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
+    color: #fff;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 1s ease-in-out;
+    padding: 25px 0;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .sticky-footer .name {
+    color: #ffd166;
+    font-weight: 600;
+  }
+
+  .sticky-footer i {
+    color: #ff6b81;
+    margin: 0 6px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+
+  .sticky-footer i.fa-code {
+    color: #ffe66d;
+    animation-delay: 0.3s;
+  }
+
+  /* Animations */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+      </div>
+
+    </header>
+  </div>
+</body>
+</html>
